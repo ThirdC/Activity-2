@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "StudioGhibli";
+}
+
+@* <h1>StudioG</h1> *@
+
+@* <div class="text-center" style="background-color: white;> *@
+@*     <h1 class="display-4">Studio Ghibli </h1> *@
+@*     <p>This is a list of your favourite studio ghibli movies.</p> *@
+@* </div> *@
+
+<div class="text-center" style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 8px;">
+    <h1 class="display-4" style="font-size: 60px; font-family: 'Poppins', sans-serif;">Studio Ghibli</h1>
+    <p>This is a list of my favourite studio ghibli movies.</p>
+</div>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url('https://i.pinimg.com/1200x/8d/13/30/8d133094be4ac82892a4d8eea4bc5e23.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    .text-center {
+        font-weight: bold;
+        color: black;
+    }
+
+    table {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .btn-primary {
+        margin-top: 20px;
+    }
+</style>
+
+
+<style>
+    .image-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+        .image-row img {
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            margin-top: 20px
+        }
+
+    .image-row2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+        .image-row2 img {
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px
+        }
+</style>
+
+
+<div class="image-row">
+    <img src="https://wallup.net/wp-content/uploads/2016/05/14/38782-Studio_Ghibli-Spirited_Away.jpg" alt="...">
+    <img src="https://wallup.net/wp-content/uploads/2016/05/14/38827-Studio_Ghibli-Howls_Moving_Castle-anime.jpg" alt="...">
+    <img src="https://wallpaperaccess.com/full/163574.jpg" alt="...">
+</div>
+
+<div class="image-row2">
+    <img src="https://wallpaperaccess.com/full/42636.png" alt="...">
+    <img src="https://wallpaperaccess.com/full/2001913.jpg" alt="...">
+    <img src="https://wallpapercave.com/wp/wp4603977.jpg" alt="...">
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Spirited Away</td>
+            <td>2 hours and 4 minutes</td>
+            <td>2001</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Howl's Moving Castle</td>
+            <td>1 hour and 59 minutes</td>
+            <td>2004</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Princess Mononoke</td>
+            <td>2 hours and 13 minutes</td>
+            <td>1997</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Ponyo</td>
+            <td>1 hour and 40 minutes</td>
+            <td>2008</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>Grave of the Fireflies</td>
+            <td>1 hour and 28 minutes</td>
+            <td>1988</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>My Neighbor Totoro</td>
+            <td>1 hour and 26 minutes</td>
+            <td>1988</td>
+        </tr>
+    </tbody>
+</table>
+
+<button type="button" class="btn btn-primary">Home</button>

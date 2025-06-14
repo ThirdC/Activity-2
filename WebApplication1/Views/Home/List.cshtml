@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Lists";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lists</h1>
+    <p>View your lists here.</p>
+    <a asp-controller="Home" asp-action="CreateEditList" class="btn btn-primary"> Create New </a>
+
+    <br/>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Score</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var list in Model)
+                {
+                <tr>
+                    <td> @list.Id</td>
+                    <td> @list.Score</td>
+                    <td> @list.Title</td>
+                </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+    
